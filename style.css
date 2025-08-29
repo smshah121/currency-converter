@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    background-color: #fefefe;
+    padding: 2.5rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.amount p, .from p, .to p {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+form input[type="text"], form select {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease;
+}
+
+form input[type="text"]:focus, form select:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 5px rgba(118,75,162,0.5);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+    flex: 1;
+}
+
+.select-container img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.select-container select {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    color: #764ba2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg);
+}
+
+.msg {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    min-height: 1.5rem;
+}
+
+form button {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #764ba2, #667eea);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 450px){
+    .container {
+        width: 90%;
+        padding: 2rem;
+    }
+    .select-container img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
